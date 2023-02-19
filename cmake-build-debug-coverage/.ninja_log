@@ -1,0 +1,15 @@
+# ninja log v5
+2	202	1676785070931157193	CMakeFiles/untitled1.dir/Grid.cpp.o	2f059c925a47d178
+2	33	1676785070763854813	CMakeFiles/untitled1.dir/Bucket.cpp.o	33080a6652b6f4e8
+2	340	1676785071069219729	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	471f9c9dec6a2c2d
+2	99	1676435004258791871	CMakeFiles/untitled1.dir/Box.cpp.o	56e6ea879cca063c
+0	33	1676107606485015176	CMakeFiles/untitled1.dir/Quad.cpp.o	4cdd9a0a5e0f1f31
+1	248	1676785070977231691	CMakeFiles/untitled1.dir/main.cpp.o	a574a3a666d8d492
+2	36	1676785070767399277	CMakeFiles/untitled1.dir/Vec3.cpp.o	42b16cd77887c6a3
+0	29	1676107606481022592	CMakeFiles/untitled1.dir/vec3.cpp.o	4b9655e93bb7b7b0
+1772	2884	1676785073615604000	lib/libgtest.a	21fa1f62a564646f
+2	314	1676785279326111922	CMakeFiles/untitled1.dir/Test.cpp.o	10cc2125b1220ee2
+0	173	1676837140318429927	build.ninja	4d7c1a9e795826ac
+314	432	1676785279445688925	untitled1	abdc73efddd42871
+2	1772	1676785072498099096	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	d64a22a8464842f9
+2884	2904	1676785073636139000	lib/libgtest_main.a	1a22b72292c1559
