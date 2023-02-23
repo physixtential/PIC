@@ -10,4 +10,6 @@ struct ParticleSystem
 
     ParticleSystem();
     ~ParticleSystem();
+
+    void addParticle(const Vec3<float> position, const Vec3<float> velocity, const float mass);
 };
