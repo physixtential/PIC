@@ -5,6 +5,7 @@
 #include <cmath>
 #include <limits>
 #include "Utils.h"
+#include <map>
 int main()
 {
     // Create the particles
@@ -59,6 +60,17 @@ int main()
     {
         centerOfMass += bucket->m_particles.m_positions[i] * masses[i];
         totalMass += masses[i];
+    }
+
+    std::map<Vec3<int>, float> massMap;
+    massMap[Vec3<int>(0, 0, 0)] += 1;
+    massMap[Vec3<int>(0, 0, 0)] += 1;
+    massMap[Vec3<int>(0, 0, 1)] = 2;
+
+    //Print the map
+    for (const auto& [key, value] : massMap)
+    {
+        std::cout << key.x << ' ' << key.y << ' ' << key.z << ' ' << value << std::endl;
     }
 
     return 0;

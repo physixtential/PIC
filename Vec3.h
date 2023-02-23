@@ -57,4 +57,21 @@ Vec3<T>& operator+=(Vec3<T>& v1, const Vec3<T>& v2) {
     return v1;
 }
 
+// Operator <
+template<typename T>
+bool operator<(const Vec3<T>& v1, const Vec3<T>& v2) {
+    if (v1.x < v2.x) {
+        return true;
+    } else if (v1.x == v2.x) {
+        if (v1.y < v2.y) {
+            return true;
+        } else if (v1.y == v2.y) {
+            if (v1.z < v2.z) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 #endif //UNTITLED1_VEC3_H
