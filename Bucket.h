@@ -12,6 +12,9 @@ struct Bucket {
     // The side dimension of the square bucket.
     float m_dx;
 
+    // Center of mass of the bucket
+    Vec3<float> m_centerOfMass;
+
     // The particles in the bucket
     ParticleSystem m_particles;
 };

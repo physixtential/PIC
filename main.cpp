@@ -62,16 +62,5 @@ int main()
         totalMass += masses[i];
     }
 
-    std::map<Vec3<int>, float> massMap;
-    massMap[Vec3<int>(0, 0, 0)] += 1;
-    massMap[Vec3<int>(0, 0, 0)] += 1;
-    massMap[Vec3<int>(0, 0, 1)] = 2;
-
-    //Print the map
-    for (const auto& [key, value] : massMap)
-    {
-        std::cout << key.x << ' ' << key.y << ' ' << key.z << ' ' << value << std::endl;
-    }
-
     return 0;
 }
