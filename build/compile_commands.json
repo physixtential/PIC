@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/physixtential/cppDev/build",
+  "command": "/usr/bin/g++   -g -std=gnu++20 -o CMakeFiles/PIC.dir/main.cpp.o -c /home/physixtential/cppDev/main.cpp",
+  "file": "/home/physixtential/cppDev/main.cpp"
+},
+{
+  "directory": "/home/physixtential/cppDev/build",
+  "command": "/usr/bin/g++   -g -std=gnu++20 -o CMakeFiles/PIC.dir/Bucket.cpp.o -c /home/physixtential/cppDev/Bucket.cpp",
+  "file": "/home/physixtential/cppDev/Bucket.cpp"
+},
+{
+  "directory": "/home/physixtential/cppDev/build",
+  "command": "/usr/bin/g++   -g -std=gnu++20 -o CMakeFiles/PIC.dir/Vec3.cpp.o -c /home/physixtential/cppDev/Vec3.cpp",
+  "file": "/home/physixtential/cppDev/Vec3.cpp"
+},
+{
+  "directory": "/home/physixtential/cppDev/build",
+  "command": "/usr/bin/g++   -g -std=gnu++20 -o CMakeFiles/PIC.dir/Grid.cpp.o -c /home/physixtential/cppDev/Grid.cpp",
+  "file": "/home/physixtential/cppDev/Grid.cpp"
+},
+{
+  "directory": "/home/physixtential/cppDev/build",
+  "command": "/usr/bin/g++   -g -std=gnu++20 -o CMakeFiles/PIC.dir/ParticleSystem.cpp.o -c /home/physixtential/cppDev/ParticleSystem.cpp",
+  "file": "/home/physixtential/cppDev/ParticleSystem.cpp"
+}
+]

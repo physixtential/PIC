@@ -74,4 +74,13 @@ bool operator<(const Vec3<T>& v1, const Vec3<T>& v2) {
     return false;
 }
 
+// Operator /=
+template<typename T>
+Vec3<T>& operator/=(Vec3<T>& v1, const float scalar) {
+    v1.x /= scalar;
+    v1.y /= scalar;
+    v1.z /= scalar;
+    return v1;
+}
+
 #endif //UNTITLED1_VEC3_H

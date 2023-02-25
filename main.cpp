@@ -29,7 +29,7 @@ int main()
     std::cout << "Creating grid" << std::endl;
     Grid grid(Vec3<int>(-50, -50, -50), Vec3<float>(100, 100, 100), 34);
 
-    // Bucketize the particles
+    // Bucketize the particles. This will create buckets if they don't exist. It will not clean up buckets that are empty.
     std::cout << "Bucketizing particles" << std::endl;
     for (size_t i = 0; i < particles.m_positions.size(); i++)
     {
@@ -45,22 +45,7 @@ int main()
     const auto& masses = bucket->m_particles.m_masses;
     std::cout << bucket->m_lowerLeft.x << ' ' << bucket->m_lowerLeft.y << ' ' << bucket->m_lowerLeft.z << ' ' << masses.size() << std::endl;
 
-    // Print masses
-    std::cout << "Masses:" << std::endl;
-    for (const auto& mass : masses)
-    {
-        std::cout << mass << std::endl;
-    }
 
-    // Calculate the center of mass
-    std::cout << "Calculating center of mass" << std::endl;
-    Vec3<float> centerOfMass = Vec3<float>(0, 0, 0);
-    float totalMass = 0;
-    for (size_t i = 0; i < masses.size(); i++)
-    {
-        centerOfMass += bucket->m_particles.m_positions[i] * masses[i];
-        totalMass += masses[i];
-    }
 
     return 0;
 }

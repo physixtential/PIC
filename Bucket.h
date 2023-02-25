@@ -15,6 +15,12 @@ struct Bucket {
     // Center of mass of the bucket
     Vec3<float> m_centerOfMass;
 
+    // Total mass
+    float m_totalMass;
+
     // The particles in the bucket
     ParticleSystem m_particles;
+
+    // Calculate the center of mass of the bucket
+    void updateCenterOfMass();
 };
