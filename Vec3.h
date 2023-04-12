@@ -83,4 +83,5 @@ Vec3<T>& operator/=(Vec3<T>& v1, const float scalar) {
     return v1;
 }
 
+
 #endif //UNTITLED1_VEC3_H

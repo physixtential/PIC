@@ -5,7 +5,7 @@
 #include <cmath>
 #include <limits>
 #include "Utils.h"
-#include <map>
+
 int main()
 {
     // Create the particles
@@ -31,10 +31,8 @@ int main()
 
     // Bucketize the particles. This will create buckets if they don't exist. It will not clean up buckets that are empty.
     std::cout << "Bucketizing particles" << std::endl;
-    for (size_t i = 0; i < particles.m_positions.size(); i++)
-    {
-        grid.bucketizeParticle(particles.m_positions[i], particles.m_velocities[i], particles.m_masses[i]);
-    }
+    grid.bucketizeParticleSystem(particles);
+
 
     // Print the grid
     std::cout << "Printing grid" << std::endl;
@@ -44,7 +42,6 @@ int main()
     const auto& bucket = grid.getBucket(Vec3<float>(-50, -50, -50));
     const auto& masses = bucket->m_particles.m_masses;
     std::cout << bucket->m_lowerLeft.x << ' ' << bucket->m_lowerLeft.y << ' ' << bucket->m_lowerLeft.z << ' ' << masses.size() << std::endl;
-
 
 
     return 0;

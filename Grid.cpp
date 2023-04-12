@@ -129,10 +129,18 @@ std::vector<Bucket> Grid::getNeighbors(const Bucket& bucket)
     return neighbors;
 }
 
-void Grid::bucketizeParticle(const Vec3<float> position, const Vec3<float> velocity, const float mass)
+void Grid::bucketizeParticle(const Vec3<float>& position, const Vec3<float>& velocity, const float mass)
 {
-    Bucket* bucket = getBucket(position);
+    std::unique_ptr<Bucket> bucket = getBucket(position);
     bucket->m_particles.m_positions.push_back(position);
     bucket->m_particles.m_velocities.push_back(velocity);
     bucket->m_particles.m_masses.push_back(mass);
+}
+
+void Grid::bucketizeParticleSystem(const ParticleSystem& particles)
+{
+    for (size_t i = 0; i < particles.m_positions.size(); i++)
+    {
+        bucketizeParticle(particles.m_positions[i], particles.m_velocities[i], particles.m_masses[i]);
+    }
 }
